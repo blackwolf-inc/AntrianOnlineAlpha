@@ -63,10 +63,10 @@
 					<input type="text" name="username_pasien" class="form-control" placeholder="username">
 					</div>
 					<div class="form-group">
-					<input type="password" name="password_pasien" class="form-control" placeholder="password">
+					<input type="password" name="password_pasien" class="form-control" placeholder="password" id="inputpassword">
 					</div>
 					<div class="form-group">
-					<label class="checkbox-inline"><input type="checkbox">show password</label>
+					<label class="checkbox-inline"><input type="checkbox" id="showpassword">show password</label>
 					</div>
 					<div class="form-group">
 					<button class="btn btn-primary btn-block">Login</button>
@@ -76,5 +76,16 @@
 					</div>
 				</form>
 			</div>
+			<script>
+				var inputPassword = document.getElementById('inputpassword');
+				var showPassword = document.getElementById('showpassword');
+
+				inputPassword.type = showPassword.checked === true ? 'text' : 'password';
+
+				showPassword.addEventListener('click', function() {
+					console.log(this);
+					inputPassword.type = this.checked === true ? 'text' : 'password';
+				})
+			</script>
 </body>
 </html>
