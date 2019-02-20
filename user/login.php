@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['pasien_submit'])){
+    if(isset($_POST['pasien_login'])){
         require_once '../koneksi.php';
 
         $uname = $conn->real_escape_string($_POST['username_pasien']);

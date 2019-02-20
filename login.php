@@ -69,7 +69,7 @@
 					<label class="checkbox-inline"><input type="checkbox" id="showpassword">show password</label>
 					</div>
 					<div class="form-group">
-					<button class="btn btn-primary btn-block">Login</button>
+					<button class="btn btn-primary btn-block" name="pasien_login">Login</button>
 					</div>
 					<div class="form-group">
 						<a href="" class="form-inline text-center center-block"><h5>forgot password?</h5></a>
