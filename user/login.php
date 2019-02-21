@@ -25,7 +25,7 @@
         if($is_login == true) {
             session_start();
             $_SESSION['u'] = 'pasien';
-            $_SESSION['u_nik'] = $data['ID_pasien'];
+            $_SESSION['u_id_pasien'] = $data['ID_pasien'];
             $_SESSION['u_username'] = $data['username_pasien'];
             $_SESSION['u_nama'] = $data['nama_pasien'];
             header("Location: /user_antrian.php");
